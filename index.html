@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previsão do Tempo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌤️ Previsão do Tempo</h1>
+
+    <input type="text" id="cidade" placeholder="Digite o nome da cidade..." />
+    <button onclick="buscarClima()">Buscar</button>
+
+    <p id="loading">Carregando...</p>
+    <p id="erro">Cidade não encontrada. Tente novamente.</p>
+
+    <div id="resultado">
+      <h2 id="nomeCidade"></h2>
+      <img id="icone" src="" alt="ícone do clima" />
+      <p id="temperatura"></p>
+      <p id="descricao"></p>
+      <p id="umidade"></p>
+      <p id="vento"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
